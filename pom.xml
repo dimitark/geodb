@@ -10,8 +10,8 @@
 
   <repositories>
     <repository>
-      <id>boundless</id>
-      <url>https://repo.boundlessgeo.com/main</url>
+      <id>os-geo</id>
+      <url>https://repo.osgeo.org/repository/release/</url>
     </repository>
   </repositories>
 
@@ -59,7 +59,6 @@
         <configuration>
           <finalName>geodb-${project.version}</finalName>
           <descriptors>
-            <descriptor>app.xml</descriptor>
             <descriptor>lib.xml</descriptor>
           </descriptors>
         </configuration>
@@ -69,14 +68,12 @@
 
   <distributionManagement>
     <repository>
-      <id>boundless</id>
-      <name>Boundless Maven Repository</name>
-      <url>http://repo.boundlessgeo.com/main</url>
+      <id>os-geo</id>
+      <url>https://repo.osgeo.org/repository/release/</url>
     </repository>
     <snapshotRepository>
-      <id>boundless</id>
-      <name>Boundless Maven Repository</name>
-      <url>http://repo.boundlessgeo.com</url>
+      <id>os-geo</id>
+      <url>https://repo.osgeo.org/repository</url>
       <uniqueVersion>false</uniqueVersion>
     </snapshotRepository>
   </distributionManagement>
@@ -96,7 +93,6 @@
 
   <modules>
     <module>core</module>
-    <module>app</module>
   </modules>
 
 </project>
